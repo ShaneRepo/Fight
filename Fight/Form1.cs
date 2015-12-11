@@ -16,5 +16,10 @@ namespace Fight
         {
             InitializeComponent();
         }
+        public int Damage()
+        {
+            Random r = new Random();
+            return r.Next(10,21);
+        }
     }
 }

@@ -15,12 +15,15 @@ namespace Fight
 
         public Creature()
         {
+            _strength = 5;
+            _hitpoints = 100;
             _name = "Base Creature";
         }
         public Creature(int strength, int hitpoints)
         {
             _strength = strength;
             _hitpoints = hitpoints;
+            _name = "Base Creature";
         }
         public int Strength
         {
@@ -37,11 +40,6 @@ namespace Fight
             get { return _name; }
             set { _name = value; }
         }
-        public virtual int Damage
-        {
-            get { return _damage; }
-            set { _damage = value; }   
-        }
-
+        
     }
 }
