@@ -54,7 +54,7 @@
             // listBoxBattleResults
             // 
             this.listBoxBattleResults.FormattingEnabled = true;
-            this.listBoxBattleResults.Location = new System.Drawing.Point(529, 181);
+            this.listBoxBattleResults.Location = new System.Drawing.Point(343, 149);
             this.listBoxBattleResults.Name = "listBoxBattleResults";
             this.listBoxBattleResults.Size = new System.Drawing.Size(237, 186);
             this.listBoxBattleResults.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.labelBattleResults.AutoSize = true;
             this.labelBattleResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBattleResults.Location = new System.Drawing.Point(581, 130);
+            this.labelBattleResults.Location = new System.Drawing.Point(383, 112);
             this.labelBattleResults.Name = "labelBattleResults";
             this.labelBattleResults.Size = new System.Drawing.Size(123, 20);
             this.labelBattleResults.TabIndex = 2;
@@ -71,16 +71,17 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(68, 343);
+            this.buttonStart.Location = new System.Drawing.Point(101, 112);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
             this.buttonStart.TabIndex = 3;
             this.buttonStart.Text = "Start Game";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(68, 389);
+            this.buttonSave.Location = new System.Drawing.Point(205, 112);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(68, 440);
+            this.buttonLoad.Location = new System.Drawing.Point(101, 167);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(75, 23);
             this.buttonLoad.TabIndex = 5;
@@ -98,23 +99,24 @@
             // 
             // buttonQuit
             // 
-            this.buttonQuit.Location = new System.Drawing.Point(68, 496);
+            this.buttonQuit.Location = new System.Drawing.Point(205, 167);
             this.buttonQuit.Name = "buttonQuit";
             this.buttonQuit.Size = new System.Drawing.Size(75, 23);
             this.buttonQuit.TabIndex = 6;
             this.buttonQuit.Text = "Quit Game";
             this.buttonQuit.UseVisualStyleBackColor = true;
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
             // 
             // textBoxWins
             // 
-            this.textBoxWins.Location = new System.Drawing.Point(318, 475);
+            this.textBoxWins.Location = new System.Drawing.Point(65, 278);
             this.textBoxWins.Name = "textBoxWins";
             this.textBoxWins.Size = new System.Drawing.Size(100, 20);
             this.textBoxWins.TabIndex = 7;
             // 
             // textBoxLosses
             // 
-            this.textBoxLosses.Location = new System.Drawing.Point(502, 474);
+            this.textBoxLosses.Location = new System.Drawing.Point(190, 278);
             this.textBoxLosses.Name = "textBoxLosses";
             this.textBoxLosses.Size = new System.Drawing.Size(100, 20);
             this.textBoxLosses.TabIndex = 8;
@@ -122,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 430);
+            this.label2.Location = new System.Drawing.Point(98, 241);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 9;
@@ -131,7 +133,7 @@
             // labelLoss
             // 
             this.labelLoss.AutoSize = true;
-            this.labelLoss.Location = new System.Drawing.Point(502, 430);
+            this.labelLoss.Location = new System.Drawing.Point(202, 241);
             this.labelLoss.Name = "labelLoss";
             this.labelLoss.Size = new System.Drawing.Size(40, 13);
             this.labelLoss.TabIndex = 10;

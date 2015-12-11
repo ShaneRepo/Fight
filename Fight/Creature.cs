@@ -17,13 +17,13 @@ namespace Fight
         {
             _strength = 5;
             _hitpoints = 100;
-            _name = "Base Creature";
+            _name = "Creature";
         }
         public Creature(int strength, int hitpoints)
         {
             _strength = strength;
             _hitpoints = hitpoints;
-            _name = "Base Creature";
+            _name = "Creature";
         }
         public int Strength
         {
@@ -39,6 +39,11 @@ namespace Fight
         {
             get { return _name; }
             set { _name = value; }
+        }
+        public int Damage()
+        {
+            Random r = new Random();
+            return r.Next(10, 21);
         }
         
     }
