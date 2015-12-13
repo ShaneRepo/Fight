@@ -141,6 +141,7 @@ namespace Fight
             loss = 0;
             textBoxWins.Text = "";
             textBoxLosses.Text = "";
+            MessageBox.Show("Player 1 wins and losses have been cleared.");
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
