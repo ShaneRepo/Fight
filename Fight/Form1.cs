@@ -33,16 +33,17 @@ namespace Fight
         {
             InitializeComponent();
         }
+        // damage method 
         public int Damage()
         {
             return r.Next(10,21);
         }
-
+        // quit game
         private void buttonQuit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        // start game
         private void buttonStart_Click(object sender, EventArgs e)
         {
             int dam1;
@@ -51,7 +52,6 @@ namespace Fight
             p1.Name = "Player 1";
             ai.Name = "CPU";
             int dam2;
-            //int hp2 = 0;
             bool isDead = false;
             string outputai;
             string outputp1;
@@ -70,7 +70,6 @@ namespace Fight
                     textBoxLosses.Text = loss.ToString();
                     return;
                 }
-                //p1.Hitpoints = hp2;
                 dam2 = Damage();
                 ai.Hitpoints -= dam2;
                 outputp1 = p1.Name + " hit for " + dam2.ToString();
@@ -84,7 +83,6 @@ namespace Fight
                     textBoxWins.Text = win.ToString();
                     
                 }
-                //ai.Hitpoints = hp2;
             } while (isDead == false);
             winList.Add(win);
             lossList.Add(loss);
@@ -134,7 +132,7 @@ namespace Fight
                 MessageBox.Show("No file to load. Save a file first then try loading.");
             }
         }
-
+        // clear wins and losses
         private void buttonClear_Click(object sender, EventArgs e)
         {
             win = 0;
@@ -143,7 +141,7 @@ namespace Fight
             textBoxLosses.Text = "";
             MessageBox.Show("Player 1 wins and losses have been cleared.");
         }
-
+        // show help
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Player 1 battles the AI. Each start with 100 health and take turns damaging each other based on random damage roll.");
