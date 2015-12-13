@@ -134,5 +134,18 @@ namespace Fight
                 MessageBox.Show("No file to load. Save a file first then try loading.");
             }
         }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            win = 0;
+            loss = 0;
+            textBoxWins.Text = "";
+            textBoxLosses.Text = "";
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Player 1 battles the AI. Each start with 100 health and take turns damaging each other based on random damage roll.");
+        }
     }
 }
